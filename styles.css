@@ -1,0 +1,50 @@
+html {
+  font-family: "Great Vibes";
+  font-size: 2rem;
+  color: white;
+  background-image: url("lights.png");
+  background-size: cover;
+}
+
+body {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+header, footer {
+  text-shadow: 3px 3px 5px rgba(255, 0, 0, 0.612);
+}
+
+section {
+  background-color: rgba(35, 92, 35, 0.374);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(35, 92, 35, 0.568);
+  max-width: 700px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: auto;
+}
+
+.snowBlock {
+  display: flex;
+  justify-content: space-between;
+  max-width: cover;
+  position: relative;
+  animation: fallAnimation 4s linear forwards infinite;
+}
+
+.snowflakes {
+  margin: 20px;
+}
+
+@keyframes fallAnimation {
+  from {
+    transform: translateY(-5vh);
+  }
+  to {
+    transform: translateY(100vh);
+  }
+}
